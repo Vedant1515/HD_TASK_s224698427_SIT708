@@ -1,0 +1,12 @@
+<resources>
+    <style name="Base.Theme.NutriAI" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSurface">@color/colorTextPrimary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+</resources>

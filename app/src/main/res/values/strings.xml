@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">NutriAI</string>
+
+    <!-- Navigation -->
+    <string name="nav_profile">Profile</string>
+    <string name="nav_meal_plan">Meal Plan</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_history">History</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_subtitle">Set up your nutrition profile</string>
+    <string name="label_dietary_goal">Dietary Goal</string>
+    <string name="label_restrictions">Dietary Restrictions</string>
+    <string name="label_caloric_target">Daily Caloric Target (kcal)</string>
+    <string name="label_allergies">Allergies (comma-separated)</string>
+    <string name="hint_caloric_target">e.g. 2000</string>
+    <string name="hint_allergies">e.g. Nuts, Dairy</string>
+    <string name="btn_save_profile">Save Profile</string>
+    <string name="profile_saved">Profile saved successfully</string>
+    <string name="privacy_notice">Your data stays on your device. NutriAI works fully offline.</string>
+    <string name="error_caloric_required">Caloric target is required</string>
+    <string name="error_caloric_invalid">Please enter a valid number greater than 0</string>
+
+    <!-- Meal Planner Screen -->
+    <string name="title_meal_planner">Your 7-Day Meal Plan</string>
+    <string name="btn_generate">Generate Meal Plan</string>
+    <string name="btn_save_plan">Save Plan</string>
+    <string name="generating_plan">NutriAI is planning your meals…</string>
+    <string name="label_seven_day_plan">7-Day Meal Plan</string>
+    <string name="label_shopping_list">Shopping List</string>
+    <string name="plan_saved">Plan saved to history!</string>
+    <string name="no_profile">Please set up your profile first</string>
+
+    <!-- Chat Screen -->
+    <string name="title_chat">Nutrition Q&amp;A</string>
+    <string name="hint_message">Ask a nutrition question…</string>
+    <string name="btn_send">Send</string>
+    <string name="safety_warning">I can only help with nutrition and meal planning questions.</string>
+
+    <!-- History Screen -->
+    <string name="title_history">Saved Meal Plans</string>
+    <string name="no_plans">No saved plans yet.\nGenerate a meal plan to get started!</string>
+    <string name="btn_favourite">Toggle favourite</string>
+    <string name="btn_delete">Delete plan</string>
+
+    <!-- Main / Init -->
+    <string name="initialising">Initialising NutriAI…</string>
+    <string name="init_error">Failed to initialise model. Running in demo mode.</string>
+    <string name="press_back_again">Press back again to exit</string>
+
+    <!-- Auth Screen -->
+    <string name="login_subtitle">Your personal nutrition companion</string>
+    <string name="signup_title">Create Account</string>
+    <string name="signup_subtitle">Join NutriAI and start your journey</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_create_account">Create Account</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="label_name">Full Name</string>
+    <string name="hint_email">you@example.com</string>
+    <string name="hint_password">Enter password</string>
+    <string name="hint_password_signup">Min. 6 characters</string>
+    <string name="hint_confirm_password">Re-enter password</string>
+    <string name="hint_name">Your name</string>
+    <string name="btn_login">Sign In</string>
+    <string name="btn_signup">Create Account</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="link_go_signup">Don\'t have an account? Sign Up</string>
+    <string name="link_go_login">Already have an account? Sign In</string>
+
+    <!-- Spinner arrays referenced by name -->
+    <string-array name="dietary_goals">
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Maintenance</item>
+        <item>General Health</item>
+    </string-array>
+
+    <string-array name="dietary_restrictions">
+        <item>None</item>
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Gluten-Free</item>
+        <item>Dairy-Free</item>
+        <item>Keto</item>
+    </string-array>
+</resources>

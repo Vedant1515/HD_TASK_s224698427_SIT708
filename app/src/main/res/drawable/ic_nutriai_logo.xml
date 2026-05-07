@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Left fork tine (rounded top) -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M14,32 L14,15 A3,3 0 0,1 20,15 L20,32 Z" />
+
+    <!-- Right fork tine (rounded top) -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M44,32 L44,15 A3,3 0 0,1 50,15 L50,32 Z" />
+
+    <!-- Heart shape — centre tine, represents health -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M32,32 C28,32 20,26 20,19 C20,12 25,8 32,15 C39,8 44,12 44,19 C44,26 36,32 32,32 Z" />
+
+    <!-- Connector bar joining tines to handle -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M12,32 L52,32 L50,38 L14,38 Z" />
+
+    <!-- Fork handle with rounded base -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M28,38 L28,52 A4,4 0 0,0 36,52 L36,38 Z" />
+
+    <!-- White centre vein inside the heart -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M32,15 L32,30" />
+
+</vector>
