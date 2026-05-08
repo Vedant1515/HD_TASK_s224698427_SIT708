@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_header"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="32dp"
+            android:paddingBottom="40dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/ic_nutriai_logo"
+                android:background="@drawable/bg_logo_circle"
+                android:padding="15dp"
+                android:elevation="4dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorOnPrimary"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_subtitle"
+                android:textSize="13sp"
+                android:textColor="#CCFFFFFF"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Form Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorSurface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Dietary Goal -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_dietary_goal"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:paddingBottom="6dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_spinner"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="18dp" />
+
+                <!-- Dietary Restrictions -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_restrictions"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:paddingBottom="6dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerRestrictions"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_spinner"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="18dp" />
+
+                <!-- Caloric Target -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_caloric_target"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:paddingBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/etCaloricTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="@string/hint_caloric_target"
+                    android:inputType="number"
+                    android:background="@drawable/bg_input_field"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="15sp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="18dp" />
+
+                <!-- Allergies -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_allergies"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:paddingBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/etAllergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="@string/hint_allergies"
+                    android:inputType="text"
+                    android:background="@drawable/bg_input_field"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="15sp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="@string/btn_save_profile"
+                    android:background="@drawable/bg_button_primary"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0"
+                    android:stateListAnimator="@null"
+                    android:elevation="4dp" />
+
+                <!-- Privacy Notice -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_notice"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextHint"
+                    android:gravity="center"
+                    android:paddingTop="16dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+                <!-- Logout Button -->
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/btn_logout"
+                    android:backgroundTint="@color/colorError"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0"
+                    android:stateListAnimator="@null" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.nutriai.fragment.ProfileFragment"
+        android:label="@string/nav_profile" />
+
+    <fragment
+        android:id="@+id/mealPlannerFragment"
+        android:name="com.example.nutriai.fragment.MealPlannerFragment"
+        android:label="@string/nav_meal_plan" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.nutriai.fragment.ChatFragment"
+        android:label="@string/nav_chat" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.nutriai.fragment.HistoryFragment"
+        android:label="@string/nav_history" />
+
+</navigation>
