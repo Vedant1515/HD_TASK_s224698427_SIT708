@@ -215,6 +215,17 @@ public class ModelManager {
         tokenizerPfd = null;
     }
 
+    /** Clears all saved URIs and flags, returning the app to the setup screen on next launch. */
+    public void clearSetup(Context context) {
+        prefs(context).edit()
+                .remove(KEY_MODEL_URI)
+                .remove(KEY_TOKER_URI)
+                .remove(KEY_DEMO_MODE)
+                .apply();
+        releaseFds();
+        lastTokenizerPath = null;
+    }
+
     private void closePfd(ParcelFileDescriptor pfd) {
         if (pfd != null) { try { pfd.close(); } catch (IOException ignored) {} }
     }
