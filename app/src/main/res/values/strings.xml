@@ -35,7 +35,11 @@
     <string name="title_chat">Nutrition Q&amp;A</string>
     <string name="hint_message">Ask a nutrition question…</string>
     <string name="btn_send">Send</string>
-    <string name="safety_warning">I can only help with nutrition and meal planning questions.</string>
+    <string name="safety_warning">I can only help with nutrition and meal planning questions. For medical concerns, please consult a healthcare professional.</string>
+    <string name="btn_clear_chat">Clear chat</string>
+    <string name="btn_clear_all">Clear all history</string>
+    <string name="confirm_clear_chat">Clear all messages?</string>
+    <string name="confirm_clear_history">Delete all saved meal plans?</string>
 
     <!-- History Screen -->
     <string name="title_history">Saved Meal Plans</string>

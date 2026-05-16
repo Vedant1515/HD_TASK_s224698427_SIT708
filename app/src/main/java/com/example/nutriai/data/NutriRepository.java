@@ -69,4 +69,9 @@ public class NutriRepository {
     public void deletePlan(int id) {
         executor.execute(() -> mealPlanDao.deletePlan(id));
     }
+
+    public void deleteAllMealPlans() {
+        int userId = sessionManager.getUserId();
+        executor.execute(() -> mealPlanDao.deleteAllByUser(userId));
+    }
 }

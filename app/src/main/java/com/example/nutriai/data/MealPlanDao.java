@@ -21,4 +21,7 @@ public interface MealPlanDao {
 
     @Query("DELETE FROM meal_plan WHERE id = :id")
     void deletePlan(int id);
+
+    @Query("DELETE FROM meal_plan WHERE userId = :userId")
+    void deleteAllByUser(int userId);
 }

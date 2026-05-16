@@ -19,11 +19,19 @@ public class ResponseParser {
     }
 
     private static final List<String> UNSAFE_KEYWORDS = Arrays.asList(
+            // Self-harm / crisis
             "suicide", "self-harm", "self harm", "kill myself", "end my life",
+            // Medical / clinical
             "diagnose", "diagnosis", "prescribe", "prescription", "medication",
             "drug dosage", "overdose", "inject", "syringe", "illegal",
             "cancer treatment", "cure cancer", "treat diabetes", "treat disease",
-            "medical advice", "doctor advice"
+            "medical advice", "doctor advice",
+            // Eating disorders
+            "anorexia", "bulimia", "binge and purge", "purging", "laxative abuse",
+            "starve myself", "stop eating", "eating disorder",
+            // Dangerous diet extremes
+            "diet pills", "fat burner pills", "appetite suppressant", "zero calorie diet",
+            "500 calorie", "crash diet"
     );
 
     // Matches "Day 1", "Day 1:", "**Day 1**", "**Day 1:**" etc.

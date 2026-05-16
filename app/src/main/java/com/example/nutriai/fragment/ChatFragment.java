@@ -1,5 +1,6 @@
 package com.example.nutriai.fragment;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -53,6 +54,13 @@ public class ChatFragment extends Fragment {
         rvChat.setAdapter(chatAdapter);
 
         btnSend.setOnClickListener(v -> sendMessage());
+
+        ImageButton btnClearChat = view.findViewById(R.id.btnClearChat);
+        btnClearChat.setOnClickListener(v -> new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.confirm_clear_chat)
+                .setPositiveButton(android.R.string.ok, (d, w) -> viewModel.clearHistory())
+                .setNegativeButton(android.R.string.cancel, null)
+                .show());
 
         observeViewModel();
     }

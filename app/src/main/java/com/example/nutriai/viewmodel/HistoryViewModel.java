@@ -34,4 +34,8 @@ public class HistoryViewModel extends AndroidViewModel {
     public void deletePlan(int id) {
         repository.deletePlan(id);
     }
+
+    public void deleteAllPlans() {
+        repository.deleteAllMealPlans();
+    }
 }

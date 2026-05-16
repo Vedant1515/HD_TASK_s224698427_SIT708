@@ -1,9 +1,11 @@
 package com.example.nutriai.fragment;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -54,6 +56,13 @@ public class HistoryFragment extends Fragment implements HistoryAdapter.HistoryL
             historyAdapter.setPlans(plans);
             tvEmpty.setVisibility(plans == null || plans.isEmpty() ? View.VISIBLE : View.GONE);
         });
+
+        ImageButton btnClearAll = view.findViewById(R.id.btnClearAll);
+        btnClearAll.setOnClickListener(v -> new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.confirm_clear_history)
+                .setPositiveButton(android.R.string.ok, (d, w) -> viewModel.deleteAllPlans())
+                .setNegativeButton(android.R.string.cancel, null)
+                .show());
     }
 
     @Override
